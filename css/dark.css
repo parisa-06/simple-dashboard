@@ -1,0 +1,50 @@
+body{
+	background-color: #181924;
+}
+/*** header => 'top header and bottom header' ***/
+.top-headar , .bottom-header{
+	background-color: #2A2B36;
+	color: white;
+}
+.text a{
+	color: white;
+}
+/*** end  header :D ***/
+#sidebar{
+	background: #2A2B36;
+}
+.logo{
+	color: white;
+}
+
+#slidebar-icon{
+color: #fff;
+background: #2A2B36;
+}
+
+#sidebar #menu ul li{
+	font-family: 'Exo 2', sans-serif;
+	height: 40px;
+	margin-top: 5px;
+	transition:background 1s;
+}
+
+#sidebar #menu ul li a{
+	color: #fff;
+}
+
+.active,#sidebar #menu ul li:hover{
+	background: #4ABCDD;
+	border-left: 2px solid #fff;
+	font-weight: bolder;
+	font-size: 18px
+}
+
+li i{
+color: #fff;
+
+}
+
+#copyright{
+	color: #fff;
+}
