@@ -1,50 +1,63 @@
+@font-face {
+	font-family: Vazir;
+	src: url('../fonts/Vazir-Bold.eot');
+	src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Vazir.woff') format('woff'),
+		 url('../fonts/Vazir.woff') format('truetype');
+	font-weight: normal;
+  }
 body{
-	background-color: #181924;
+	background-color: #f9f9fc;
+	color: #19305E;
+	font-family: 'Vazir';
 }
+
 /*** header => 'top header and bottom header' ***/
-.top-headar , .bottom-header{
-	background-color: #2A2B36;
-	color: white;
-}
-.text a{
-	color: white;
+.byd-top-headar, 
+.byd-bottom-header{
+	background-color: #F5F5FA;
+	}
+.byd-bottom-header{
+	box-shadow: 10px 10px 10px 1px #f1f1f1;
+	border-top: 1px solid  #e7e7e7;
+}	
+.byd-text a{
+	color:#19305E;
 }
 /*** end  header :D ***/
-#sidebar{
-	background: #2A2B36;
+#sidebar-id{
+	background: #F5F5FA;
 }
 .logo{
-	color: white;
+	color: #19305E;
 }
 
 #slidebar-icon{
-color: #fff;
-background: #2A2B36;
+color: #7166F9;
+background: white;
 }
-
-#sidebar #menu ul li{
-	font-family: 'Exo 2', sans-serif;
-	height: 40px;
-	margin-top: 5px;
-	transition:background 1s;
+#slidebar-open-id, #slidebar-close-id ,#slidebar-pin-id{
+	color: #5E52F9;
 }
-
-#sidebar #menu ul li a{
-	color: #fff;
+.byd-accordion .byd-link{
+	color: #19305E ;
 }
-
-.active,#sidebar #menu ul li:hover{
-	background: #4ABCDD;
-	border-left: 2px solid #fff;
-	font-weight: bolder;
-	font-size: 18px
+.byd-accordion li.open .byd-link {
+	color: #1d335f;
+	font-weight:700 ;
 }
-
-li i{
-color: #fff;
-
+.byd-accordion li i{
+	color: #19305E;
 }
-
-#copyright{
-	color: #fff;
+.byd-accordion li.open i {
+	color:#5E52F9;
+ } 
+.byd-submenu a {
+	color:#19305E;
+ }
+.byd-accordion li.open i.fa-chevron-down{
+	color: #19305E;
+}
+.byd-submenu li {
+	border-right: 2px solid #5E52F9;
 }
