@@ -1,17 +1,20 @@
 
-// When the user  icons sidbar, execute myFunction :D
-function openClick() {
-	document.getElementById('sidebar-id').style = 'right :0px;'
-	document.getElementById('slidebar-open-id').style = 'display: none;'
-}
+// When the user icons open and close sidbar, execute myFunction :D
+$(document).ready(function () {
+	$("#slidebar-open-id").click(function () {
+		$("#sidebar-id").animate({ right: '0px' }, 400);
+	});
+});
+$(document).ready(function () {
+	$("#slidebar-close-id").click(function () {
+		$("#sidebar-id").animate({ right: '-250px' }, 500);
+	});
+});
 
-function closClick() {
-	document.getElementById('sidebar-id').style = 'right :-250px;'
-	document.getElementById('slidebar-open-id').style = 'display:block ;'
-}
-
-{ document.getElementById('main').addEventListener('click', closClick) }
-
+// When we tap on the screen, execute myFunction :D
+$('#main').click(function () {
+	$("#sidebar-id").animate({ right: '-250px' }, 500);
+});
 
 
 // When the user scrolls the page, execute myFunction :D

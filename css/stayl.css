@@ -29,9 +29,10 @@ header {
 .byd-progress {
 	position        : fixed;
 	top             : 0;
-	z-index         : 1;
+	z-index         : 10;
 	width           : 100%;
 	background-color: #f1f1f1;
+	direction: rtl;
 }
 
 .progress-container {
@@ -58,7 +59,7 @@ header {
 }
 
 .byd-left-top {
-	padding-left: 50px;
+	padding-left: 30px;
 }
 
 .byd-left-icon-top {
@@ -76,7 +77,7 @@ header {
 }
 
 .byd-left-bottom {
-	padding-left: 50px;
+	padding-left: 30px;
 }
 
 .byd-left-icon-bottom {
@@ -87,7 +88,9 @@ header {
 	direction    : rtl;
 	display      : inline-flex;
 	font-size    : 10px;
-	padding-right: 10px;
+	padding-right: 30px;
+
+    margin-top: 10px;
 }
 
 .byd-text a {
@@ -101,7 +104,7 @@ header {
 	width             : 250px;
 	height            : 100%;
 	position          : fixed;
-	top               : 0;
+	top               : 5px;
 	right             : -250px;
 	padding           : 11px 0 5px 0;
 	text-align        : right;
@@ -115,7 +118,7 @@ header {
 #slidebar-open-id {
 	position     : absolute;
 	top          : 0px;
-	right        : 260px;
+	right        : 29px;
 	width        : 40px;
 	height       : 40px;
 	border-radius: 4px;
@@ -204,12 +207,9 @@ a {
 .byd-submenu {
 	display: none;
 	width  : 88%;
-
-	/* background: #444359; */
+/* background: #444359; */
 	font-size: 14px;
 }
-
-
 
 .byd-submenu a {
 	display           : block;
@@ -220,7 +220,6 @@ a {
 	-o-transition     : all 0.25s ease;
 	transition        : all 0.25s ease;
 }
-
 .byd-submenu a:hover {
 	/* background: #b63b4d; */
 	color: #5E52F9;
