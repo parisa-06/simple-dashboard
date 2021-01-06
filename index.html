@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -7,106 +7,125 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/stayl.css">
   <link rel="stylesheet" href="css/dark.css">
-  <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
   <link rel="stylesheet" href="fontello-59365dd8/css/doashbord.css">
-  <script src="https://use.fontawesome.com/84c3f8fd28.js"></script>
-
   <title>Doashbord</title>
 </head>
 
-<body>
-
+<body dir="rtl">
   <header>
     <div class="byd-progress">
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div>
     </div>
+
     <div class="byd-top-headar">
-      <span> <a type="button" href="#" id="slidebar-open-id"> <i class="icon-menu-2"></i></a></span>
+      <div class=" byd-top-right">
+        <a type="button" href="#" id="slidebar-open-id"> <i class="icon-menu-2"></i></a>
+        <div class="byd-search-box">
+          <form>
+            <input type="search" placeholder="جستجو">
+          </form>
+       </div>
+      </div>
       <div class="byd-left-top">
         <i class="byd-left-icon-top   icon-sun"></i>
         <i class="byd-left-icon-top   icon-list"></i>
-        <i class="byd-left-icon-top   icon-bell"></i>
-        <i class="byd-left-icon-top   icon-user"></i>
+        <i class="byd-left-icon-top   icon-cog-outline"></i>
+        <i class="byd-left-icon-top   icon-off  "></i>
       </div>
     </div>
 
     <div class="byd-bottom-header">
-      <div class="byd-left-bottom">
-        <i class="byd-left-icon-bottom  icon-off"></i>
-        <i class="byd-left-icon-bottom  icon-cog-outline"></i>
-        <i class="byd-left-icon-bottom  icon-search"></i>
-      </div>
-      <div class="byd-text">
+      <div class="byd-right-text">
         <p> <a href="#"> صفحه اصلی &nbsp; </a></p>
         <p> | </p>
         <p> <a href="#"> &nbsp; &nbsp;صفحه کاربری </a></p>
       </div>
-    </div>
-  </header>
 
-  <aside>
-    <div id="sidebar-id">
-
-      <a type="button" href="#" id="slidebar-close-id"> <i class="icon-cancel"></i></a>
-      <a type="button" onclick="openClickever()" href="#" id="slidebar-pin-id"><i class="icon-pin-1"></i></a>
-
-      <div class="byd-logo ">
-        <span>
-          <p>مدرسه مهر</p>
-        </span>
-
-        <ul id="accordion-id" class="byd-accordion">
-          <li>
-            <div class="byd-link"><i class=" icon-gauge-1"></i> داشبورد</i></div>
-            <ul class="byd-submenu"></ul>
-          </li>
-          <li>
-            <div class="byd-link"><i class=" icon-news"></i>گزارش تحصیلی<i class="fa-chevron-down"></i></div>
-            <ul class="byd-submenu">
-              <li><a href="#">آیتم اول</a></li>
-              <li><a href="#">آیتم دوم </a></li>
-              <li><a href="#">آیتم سوم</a></li>
-              <li><a href="#">آیتم چهارم</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="byd-link"><i class=" icon-wallet"></i> امور مالی <i class=" fa-chevron-down"></i></div>
-            <ul class="byd-submenu">
-              <li><a href="#">آیتم اول </a></li>
-              <li><a href="#">آیتم دوم</a></li>
-              <li><a href="#">آیتم سوم</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="byd-link"><i class=" icon-calendar-2"></i>برنامه هفتگی و امتحانات<i
-                class=" fa-chevron-down"></i>
-            </div>
-            <ul class="byd-submenu">
-              <li><a href="#">آیتم اول</a></li>
-              <li><a href="#">آیتم دوم </a></li>
-              <li><a href="#">آیتم سوم</a></li>
-              <li><a href="#">آیتم چهارم</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="byd-link"><i class="icon-book-1"></i>کتابخانه<i class=" fa-chevron-down"></i></div>
-            <ul class="byd-submenu">
-              <li><a href="#">آیتم اول</a></li>
-              <li><a href="#">آیتم دوم</a></li>
-              <li><a href="#">آیتم سوم</a></li>
-              <li><a href="#">آیتم چهارم</a></li>
-            </ul>
-          <li>
-            <div class="byd-link"><i class="icon-chart-pie-2"></i> نظرسنجی الکترونیکی</i></div>
-            <ul class="byd-submenu"></ul>
-          </li>
-        </ul>
-
+     <div class="byd-left-bottom">
+       <div class="byd-menu">
+          <div class="byd-img">
+            <img class=" img-fluid rounded-circle" src="img/face-user.jpg" alt="img-user">
+          </div>
+          <ul class="byd-dropdown">
+            <li class="byd-dropdown-menu">
+              <a href="#"> علیرضا زارعی &#9662;</a>
+              <ul class="byd-dropdown-sub-menu">
+                <li><a href="#">آیتم اول  <i class="  icon-off "> </i></a> </li>
+                <li><a href="#">آیتم دوم <i class=" icon-cog-outline"></i> </a></li>
+                <li><a class="last" href="#">آیتم سوم<i class="icon-sun"></i> </a></li>
+              </ul>
+            </li>
+           </ul>
+          </div>
+        
+        </div>
+        
       </div>
+ </header>
+  
+ <aside>
+  <div id="sidebar-id">
+    <a type="button" href="#" id="slidebar-close-id"> <i class="icon-cancel"></i></a>
+    <a type="button" onclick="openClickever()" href="#" id="slidebar-pin-id"><i class="icon-pin-1"></i></a>
 
-  </aside>
+    <div class="byd-logo ">
+      <span>
+        <p>مدرسه مهر</p>
+      </span>
+
+      <ul id="accordion-id" class="byd-accordion">
+        <li>
+          <div class="byd-link"><i class=" icon-gauge-1"></i> داشبورد</i></div>
+          <ul class="byd-submenu"></ul>
+        </li>
+        <li>
+          <div class="byd-link"><i class=" icon-news"></i>گزارش تحصیلی<i class="fa-chevron-down"></i></div>
+          <ul class="byd-submenu">
+            <li><a href="#">آیتم اول</a></li>
+            <li><a href="#">آیتم دوم </a></li>
+            <li><a href="#">آیتم سوم</a></li>
+            <li><a href="#">آیتم چهارم</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="byd-link"><i class=" icon-wallet"></i> امور مالی <i class=" fa-chevron-down"></i></div>
+          <ul class="byd-submenu">
+            <li><a href="#">آیتم اول </a></li>
+            <li><a href="#">آیتم دوم</a></li>
+            <li><a href="#">آیتم سوم</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="byd-link"><i class=" icon-calendar-2"></i>برنامه هفتگی و امتحانات<i
+              class=" fa-chevron-down"></i>
+          </div>
+          <ul class="byd-submenu">
+            <li><a href="#">آیتم اول</a></li>
+            <li><a href="#">آیتم دوم </a></li>
+            <li><a href="#">آیتم سوم</a></li>
+            <li><a href="#">آیتم چهارم</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="byd-link"><i class="icon-book-1"></i>کتابخانه<i class=" fa-chevron-down"></i></div>
+          <ul class="byd-submenu">
+            <li><a href="#">آیتم اول</a></li>
+            <li><a href="#">آیتم دوم</a></li>
+            <li><a href="#">آیتم سوم</a></li>
+            <li><a href="#">آیتم چهارم</a></li>
+          </ul>
+        <li>
+          <div class="byd-link"><i class="icon-chart-pie-2"></i> نظرسنجی الکترونیکی</i></div>
+          <ul class="byd-submenu"></ul>
+        </li>
+      </ul>
+
+    </div>
+
+</aside>
+
 
   <div class="p container-fluid" id="main">
 

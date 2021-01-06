@@ -1,3 +1,18 @@
+// When the user sting profile, execute myFunction :D
+$(document).ready(function(){
+    // Show hide popover
+    $(".byd-dropdown-menu").click(function(){
+        $(this).find(".byd-dropdown-sub-menu").slideToggle("fast");
+    });
+});
+$(document).on("click", function(event){
+    var $trigger = $(".byd-dropdown-menu");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+        $(".byd-dropdown-sub-menu").slideUp("fast");
+    }            
+});
+
+
 
 // When the user icons open and close sidbar, execute myFunction :D
 $(document).ready(function () {
